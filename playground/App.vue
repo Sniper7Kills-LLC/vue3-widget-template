@@ -8,7 +8,7 @@ import { ref, onMounted } from "vue";
 // Define a ref to hold the resolved component
 const resolvedComponent = ref(null);
 
-const settings = ref({ message: "Custom Message" });
+const settings = ref({});
 
 onMounted(async () => {
   try {

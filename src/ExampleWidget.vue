@@ -1,11 +1,16 @@
 <template>
-  <h1>{{ $props.message }}</h1>
+  <div>
+    <p>Example Widget</p>
+    <label>Prop "message":</label>
+    <span>{{ $props.message }}</span>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "TestWidget",
+  name: "ExampleWidget",
+  widgetWidth: 3,
   props: {
     message: {
       type: String,
